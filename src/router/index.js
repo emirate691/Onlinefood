@@ -5,6 +5,7 @@ import About from "../views/About.vue";
 import ServiceProvide from "../views/ServiceProvide.vue";
 import FoodDetail from "../views/FoodDetail.vue";
 import Detail from "../views/Detail.vue";
+import Details from "../views/Details.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -33,6 +34,11 @@ const routes = [
     path: "/Detail",
     name: "Detail",
     component: Detail,
+  },
+  {
+    path: "/Details",
+    name: "Details",
+    component: Details,
   },
 ];
 

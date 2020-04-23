@@ -7,7 +7,7 @@
 <style>
 .head {
   background-color: #30a55e;
-  width: 1370px;
+  width: 1350px;
   margin-left: 0;
   height: 60px;
   margin-right: 0px;

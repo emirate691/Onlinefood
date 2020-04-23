@@ -1,38 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <Head />
-    </div>
     <Header />
-    <router-view />
+    <div class="custom-wrapper">
+      <router-view />
+    </div>
   </div>
 </template>
+
 <script>
-import Header from "@/components/Header.vue";
-import Head from "@/components/Head.vue";
+import Header from "./components/Header";
+//import Head from "./components/Head";
+
 export default {
-  name: "Home",
+  name: "App",
+
   components: {
     Header,
-    Head,
+    //Head,
   },
 };
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
 #nav {
-  padding: 0px;
+  padding: 30px;
 }
-
-#nav a {
+s #nav a {
   font-weight: bold;
   color: #2c3e50;
 }
