@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <b-container class="contents">
+  <div>
+    <b-container fluid="lg">
       <div class="clearfix">
         <b-img
           left
@@ -12,6 +12,7 @@
           src="https://africa-public.food.jumia.com/assets/production/ng/layout/themes/capricciosa_hellofood/images/en/jumiafood-homepage-right-splash-services.jpg?v=1555584879"
           alt="Right image"
         ></b-img>
+
         <div>
           <p class="joh">Everything you need, delivered now</p>
         </div>
@@ -266,6 +267,11 @@ export default {
 
 <style>
 .home {
+  background-color: #fff;
+  margin-top: 60px;
+
+  height: 700px;
+  background-repeat: no-repeat;
 }
 .joh {
   font-weight: bold;
@@ -275,13 +281,15 @@ export default {
   text-align: left;
   font-size: 20px;
 }
-.hel {
+.hell {
   margin-top: 50px;
+  text-align: center;
 }
 .middle {
   background-color: #ea5b31;
-  /* width: 1350px;*/
+  /* width: 1370px;*/
   height: 350px;
+  text-align: center;
 }
 .content {
   padding-top: 70px;
@@ -327,7 +335,7 @@ export default {
   width: 40%;
 }
 .fifth {
-  width: 100%;
+  /*width: 1370px;*/
   height: 350px;
   background-color: #2a2a2a;
 }
@@ -350,11 +358,5 @@ export default {
 }
 .container fa-facebook {
   padding: 10px;
-}
-.contents {
-  margin-top: 70px;
-  margin-left: 0px;
-  margin-right: 0px;
-  paddind: 100px;
 }
 </style>
