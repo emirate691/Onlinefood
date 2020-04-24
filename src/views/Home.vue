@@ -16,6 +16,7 @@
         <p class="joh">Everything you need, delivered now</p>
       </div>
       <p class="side-text">Choose a service</p>
+
       <b-row class=""> </b-row>
       <b-container>
         <b-row>

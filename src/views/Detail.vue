@@ -30,20 +30,20 @@
             </div>
           </nav>
         </b-col>
-        <b-col lg="2" id="side-1">
+        <b-col id="side-1">
           <a @click="addButton()">
             <h4 class="subhed">LUNCH & OT PLAN</h4>
           </a>
         </b-col>
-        <b-col lg="2" id="side-2">
+        <b-col id="side-2">
           <a @click="addButton()"> <h4 class="subhed">OFFICE MEETINGS</h4></a>
         </b-col>
-        <b-col lg="2" id="side-3">
+        <b-col id="side-3">
           <a @click="addButton()">
             <h4 class="subhed">CATEERING</h4>
           </a>
         </b-col>
-        <b-col lg="2" id="side-4"
+        <b-col id="side-4"
           ><a @click="addButton()"><h4 class="subhed">WHY US</h4></a></b-col
         >
       </b-row>
