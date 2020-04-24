@@ -145,7 +145,7 @@
               src="https://food.jumia.com.ng/images/jumia-for-corporate.jpg"
             />
           </b-col>
-          <b-col sm="12" lg="4" md="2"
+          <b-col sm="12" lg="4"
             ><h1>
               Jumia Food for Corporate
             </h1>
@@ -161,7 +161,7 @@
     <div class="middle" id="modd">
       <b-container>
         <b-row>
-          <b-col sm="12" lg="6" md="2" id="middle-para">
+          <b-col sm="12" lg="6" id="middle-para">
             <h2>Order food</h2>
             <h5 id="mid">
               The Jumia Food app makes it simple for anybody to use a mobile

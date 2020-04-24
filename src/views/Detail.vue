@@ -1,47 +1,53 @@
 <template>
   <div class="tempo">
-    <b-row>
-      <b-col cols="3">
-        <nav id="navbar-example3" class="navbar navbar-light bg-light">
-          <div data-spy="fixed" data-target="#navbar-example3" data-offset="0">
-            <h2 class="heading">Food for your</h2>
-            <span><marquee direction="rotate">Lunch meeting </marquee></span>
-            <h4 class="heading-2">Catering to all office needs.</h4>
-            <button class="btn btn-success" type="submit">Login form</button>
-            <button class="btn btn-outline-success" type="submit" id="bnt">
-              Sign up, it's free
-            </button>
-            <div class="buttom">
-              <div>
-                <i class="fal fa-envelope"></i
-                ><a class="link" href="#">corporate.food@jumial.com.ng</a>
+    <b-container>
+      <b-row>
+        <b-col sm="4" id="naved">
+          <nav id="navbar-example3" class="navbar navbar-light bg-light">
+            <div
+              data-spy="fixed"
+              data-target="#navbar-example3"
+              data-offset="0"
+            >
+              <h2 class="heading">Food for your</h2>
+              <span><marquee direction="rotate">Lunch meeting </marquee></span>
+              <h4 class="heading-2">Catering to all office needs.</h4>
+              <button class="btn btn-success" type="submit">Login form</button>
+              <button class="btn btn-outline-success" type="submit" id="bnt">
+                Sign up, it's free
+              </button>
+              <div class="buttom">
+                <div>
+                  <i class="fal fa-envelope"></i
+                  ><a class="link" href="#">corporate.food@jumial.com.ng</a>
+                </div>
+                <div>
+                  <i class="fas fa-mobile-alt"></i>
+                  <a class="link" href="#">063 000 987 / 0907 980 7654</a>
+                </div>
+                <a class="link" href="#">Terms & Condition Privacy FAQ </a>
               </div>
-              <div>
-                <i class="fas fa-mobile-alt"></i>
-                <a class="link" href="#">063 000 987 / 0907 980 7654</a>
-              </div>
-              <a class="link" href="#">Terms & Condition Privacy FAQ </a>
             </div>
-          </div>
-        </nav>
-      </b-col>
-      <b-col cols="2" id="side-1">
-        <a @click="addButton()">
-          <h4 class="subhed">LUNCH & OT PLAN</h4>
-        </a>
-      </b-col>
-      <b-col cols="2" id="side-2">
-        <a @click="addButton()"> <h4 class="subhed">OFFICE MEETINGS</h4></a>
-      </b-col>
-      <b-col cols="2" id="side-3">
-        <a @click="addButton()">
-          <h4 class="subhed">CATEERING</h4>
-        </a>
-      </b-col>
-      <b-col cols="2" id="side-4"
-        ><a @click="addButton()"><h4 class="subhed">WHY US</h4></a></b-col
-      >
-    </b-row>
+          </nav>
+        </b-col>
+        <b-col lg="2" id="side-1">
+          <a @click="addButton()">
+            <h4 class="subhed">LUNCH & OT PLAN</h4>
+          </a>
+        </b-col>
+        <b-col lg="2" id="side-2">
+          <a @click="addButton()"> <h4 class="subhed">OFFICE MEETINGS</h4></a>
+        </b-col>
+        <b-col lg="2" id="side-3">
+          <a @click="addButton()">
+            <h4 class="subhed">CATEERING</h4>
+          </a>
+        </b-col>
+        <b-col lg="2" id="side-4"
+          ><a @click="addButton()"><h4 class="subhed">WHY US</h4></a></b-col
+        >
+      </b-row>
+    </b-container>
   </div>
 </template>
 <script>
@@ -53,8 +59,8 @@ export default {
   methods: {
     addButton() {
       this.$router.push({ path: "/Details" });
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
@@ -125,5 +131,9 @@ export default {
 
 .lnk {
   text-decoration: none;
+}
+
+#naved {
+  margin-left: 0px;
 }
 </style>
