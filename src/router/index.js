@@ -6,6 +6,10 @@ import ServiceProvide from "../views/ServiceProvide.vue";
 import FoodDetail from "../views/FoodDetail.vue";
 import Detail from "../views/Detail.vue";
 import Details from "../views/Details.vue";
+import Party from "../views/Party.vue";
+import Restaurant from "../views/Restaurant.vue";
+import Restaurants from "../views/Restaurants.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -39,6 +43,22 @@ const routes = [
     path: "/Details",
     name: "Details",
     component: Details,
+  },
+
+  {
+    path: "/Party",
+    name: "Party",
+    component: Party,
+  },
+  {
+    path: "/Restaurant",
+    name: "Restaurant",
+    component: Restaurant,
+  },
+  {
+    path: "/Restaurants",
+    name: "Restaurants",
+    component: Restaurants,
   },
 ];
 

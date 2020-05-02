@@ -1,1 +1,0 @@
-var eventEmitter=new EventEmitter;window.eventEmitter||(window.eventEmitter=eventEmitter),window.Translator&&"undefined"!==document&&document.documentElement.lang.indexOf("-")>=0&&(window.Translator.locale=document.documentElement.lang);

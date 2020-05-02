@@ -46,6 +46,32 @@
               </b-card>
             </a>
           </b-col>
+          <b-col
+            v-for="produc in productes"
+            :key="produc.id"
+            sm="12"
+            lg="6"
+            md="2"
+            variant="primary"
+          >
+            <a @click="gotoPaged(produc)">
+              <b-card
+                :img-src="produc.partyImage"
+                img-alt="Image"
+                img-top
+                tag="article"
+                style="max-width: 20rem;"
+                class="mb-2"
+                id="car"
+              >
+                <b-card-text>
+                  <p class="name">{{ produc.partytName }}</p>
+                  <h4 class="server">{{ produc.price }}</h4>
+                  <h5>{{ produc.partyDetail }}</h5>
+                </b-card-text>
+              </b-card>
+            </a>
+          </b-col>
         </b-row>
       </b-container>
     </div>
@@ -127,6 +153,46 @@
           <a @click="gotoPages(service)">
             <img
               :src="service.partyImage"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2"
+              id="order"
+            />
+          </a>
+        </b-col>
+        <b-col
+          v-for="resta in serviced"
+          :key="resta.id"
+          sm="12"
+          lg="4"
+          md="2"
+          variant="primary"
+        >
+          <a @click="gotoPagest(resta)">
+            <img
+              :src="resta.partyImage"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2"
+              id="order"
+            />
+          </a>
+        </b-col>
+        <b-col
+          v-for="rested in serviceded"
+          :key="rested.id"
+          sm="12"
+          lg="4"
+          md="2"
+          variant="primary"
+        >
+          <a @click="gotoPagested(rested)">
+            <img
+              :src="rested.partyImage"
               img-alt="Image"
               img-top
               tag="article"
@@ -252,8 +318,17 @@ export default {
     products() {
       return this.$store.state.products;
     },
+    productes() {
+      return this.$store.state.productes;
+    },
     services() {
       return this.$store.state.services;
+    },
+    serviced() {
+      return this.$store.state.serviced;
+    },
+    serviceded() {
+      return this.$store.state.serviceded;
     },
   },
   methods: {
@@ -261,9 +336,21 @@ export default {
       this.$store.commit("setSelectedProductValue", product);
       this.$router.push({ path: "/ServiceProvide" });
     },
+    gotoPaged(produc) {
+      this.$store.commit("setSelectedProducValue", produc);
+      this.$router.push({ path: "/Party" });
+    },
     gotoPages(service) {
       this.$store.commit("setSelectedServiceValue", service);
       this.$router.push({ path: "/FoodDetail" });
+    },
+    gotoPagest(serviced) {
+      this.$store.commit("setSelectedServicdeValue", serviced);
+      this.$router.push({ path: "/Restaurant" });
+    },
+    gotoPagested(serviceded) {
+      this.$store.commit("setSelectedServicededValue", serviceded);
+      this.$router.push({ path: "/Resturants" });
     },
     addBtn() {
       this.$router.push({ path: "/Detail" });

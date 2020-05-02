@@ -2,7 +2,7 @@
   <div class="tempo">
     <b-container>
       <b-row>
-        <b-col sm="4" id="naved">
+        <b-col sm="12" id="naved">
           <nav id="navbar-example3" class="navbar navbar-light bg-light">
             <div
               data-spy="fixed"

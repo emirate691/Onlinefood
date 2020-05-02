@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="success" fixed="top">
+    <b-navbar toggleable="lg" type="dark" variant="" fixed="top">
       <b-navbar-brand href="#">
         <img
           src="https://africa-public.food.jumia.com/assets/production/ng/layout/themes/capricciosa_hellofood/images/en/jumiafood-logo.png?v=1555584879"
