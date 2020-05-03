@@ -43,7 +43,7 @@ export default new Vuex.Store({
     ],
     serviceded: [
       {
-        id: 1,
+        id: 2,
         partyImage:
           "https://africa-public.food.jumia.com/marketing/production/ng/images/nl/HP%20BANNER%202019/KFC.png?v=1555584879",
         partyDetail: "Medication and personal care",
@@ -201,6 +201,8 @@ export default new Vuex.Store({
     selectFood: null,
     selectResta: null,
     selectRested: null,
+    selectVendor: null,
+    selectVariety: null,
   },
 
   mutations: {
@@ -218,6 +220,16 @@ export default new Vuex.Store({
     },
     setSelectedRestedValue(state, rested) {
       state.selectedRested = rested;
+    },
+    setSelectedFoodValue(state, food) {
+      state.selectedFood = food;
+    },
+    setSelectedVendorValue(state, vendor) {
+      state.selectedVendor = vendor;
+    },
+
+    setSelectedVarietyValue(state, variety) {
+      state.selectedVariety = variety;
     },
   },
   actions: {},

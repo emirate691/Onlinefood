@@ -6,9 +6,10 @@
           <h3>Big Chops, Small Money</h3>
           <b-row>
             <b-col sm="12" md="3" v-for="food in Foods" :key="food.id">
-              <b-img :src="food.foodImage" fluid alt="Fluid image"></b-img>
-
-              <h5 class="my-3">{{ food.foodType }}</h5>
+              <a @click="gotopad(food)">
+                <b-img :src="food.foodImage" fluid alt="Fluid image"></b-img>
+                <h5 class="my-3">{{ food.foodType }}</h5>
+              </a>
             </b-col>
           </b-row>
         </b-container>
@@ -23,9 +24,11 @@
               v-for="variety in varieties"
               :key="variety.id"
             >
-              <b-img :src="variety.foodImage" fluid alt="Fluid image"></b-img>
+              <a @click="gotopade(variety)">
+                <b-img :src="variety.foodImage" fluid alt="Fluid image"></b-img>
 
-              <h5 class="my-3">{{ variety.foodType }}</h5>
+                <h5 class="my-3">{{ variety.foodType }}</h5>
+              </a>
             </b-col>
           </b-row>
         </b-container>
@@ -36,9 +39,10 @@
           <h3>More Vendors</h3>
           <b-row>
             <b-col sm="12" md="3" v-for="vendor in vendors" :key="vendor.id">
-              <b-img :src="vendor.foodImage" fluid alt="Fluid image"></b-img>
-
-              <h5 class="my-3">{{ vendor.foodType }}</h5>
+              <a @click="gotopades(vendor)">
+                <b-img :src="vendor.foodImage" fluid alt="Fluid image"></b-img>
+                <h5 class="my-3">{{ vendor.foodType }}</h5>
+              </a>
             </b-col>
           </b-row>
         </b-container>
@@ -61,6 +65,20 @@ export default {
     },
     vendors() {
       return this.$store.state.vendors;
+    },
+  },
+  methods: {
+    gotopad(food) {
+      this.$store.commit("selectedFoodValue, food");
+      this.$router.push({ path: "/Food" });
+    },
+    gotopades(vendor) {
+      this.$store.commit("selectedVendorValue, vendor");
+      this.$router.push({ path: "/Vendor" });
+    },
+    gotopade(variety) {
+      this.$store.commit("selectedVarietyValue, variety");
+      this.$router.push({ path: "/Variety" });
     },
   },
 };

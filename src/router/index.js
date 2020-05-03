@@ -9,6 +9,9 @@ import Details from "../views/Details.vue";
 import Party from "../views/Party.vue";
 import Restaurant from "../views/Restaurant.vue";
 import Restaurants from "../views/Restaurants.vue";
+import Food from "../views/Food.vue";
+import Vendor from "../views/Vendor.vue";
+import Variety from "../views/Variety.vue";
 
 Vue.use(VueRouter);
 
@@ -59,6 +62,21 @@ const routes = [
     path: "/Restaurants",
     name: "Restaurants",
     component: Restaurants,
+  },
+  {
+    path: "/Food",
+    name: "Food",
+    component: Food,
+  },
+  {
+    path: "/Vendor",
+    name: "Vendor",
+    component: Vendor,
+  },
+  {
+    path: "/Variety",
+    name: "Variety",
+    component: Variety,
   },
 ];
 
