@@ -12,6 +12,8 @@ import Restaurants from "../views/Restaurants.vue";
 import FoodItem from "../views/FoodItem.vue";
 import VendorList from "../views/VendorList.vue";
 import VarietyCat from "../views/VarietyCat.vue";
+import Vendor from "../views/Vendor.vue";
+import Item from "../views/Item.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +22,16 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/",
+    name: "Item",
+    component: Item,
+  },
+  {
+    path: "/Vendor",
+    name: "Vendor",
+    component: Vendor,
   },
   {
     path: "/about",
