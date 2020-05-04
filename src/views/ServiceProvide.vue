@@ -69,16 +69,16 @@ export default {
   },
   methods: {
     gotopad(food) {
-      this.$store.commit("selectedFoodValue, food");
-      this.$router.push({ path: "/Food" });
+      this.$store.commit("selectedFoodValue", food);
+      this.$router.push({ path: "/FoodItem" });
     },
     gotopades(vendor) {
-      this.$store.commit("selectedVendorValue, vendor");
-      this.$router.push({ path: "/Vendor" });
+      this.$store.commit("selectedVendorValue", vendor);
+      this.$router.push({ path: "/VendorList" });
     },
     gotopade(variety) {
-      this.$store.commit("selectedVarietyValue, variety");
-      this.$router.push({ path: "/Variety" });
+      this.$store.commit("selectedVarietyValue", variety);
+      this.$router.push({ path: "/VarietyCat" });
     },
   },
 };

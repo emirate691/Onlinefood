@@ -9,9 +9,9 @@ import Details from "../views/Details.vue";
 import Party from "../views/Party.vue";
 import Restaurant from "../views/Restaurant.vue";
 import Restaurants from "../views/Restaurants.vue";
-import Food from "../views/Food.vue";
-import Vendor from "../views/Vendor.vue";
-import Variety from "../views/Variety.vue";
+import FoodItem from "../views/FoodItem.vue";
+import VendorList from "../views/VendorList.vue";
+import VarietyCat from "../views/VarietyCat.vue";
 
 Vue.use(VueRouter);
 
@@ -64,19 +64,19 @@ const routes = [
     component: Restaurants,
   },
   {
-    path: "/Food",
-    name: "Food",
-    component: Food,
+    path: "/FoodItem",
+    name: "FoodItem",
+    component: FoodItem,
   },
   {
-    path: "/Vendor",
-    name: "Vendor",
-    component: Vendor,
+    path: "/VendoListr",
+    name: "VendorList",
+    component: VendorList,
   },
   {
-    path: "/Variety",
-    name: "Variety",
-    component: Variety,
+    path: "/VarietyCat",
+    name: "VarietyCat",
+    component: VarietyCat,
   },
 ];
 
