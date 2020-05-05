@@ -8,48 +8,150 @@
       <i class="far  fa star"></i>.
     </div>
 
-    <router-view />
-    <nav id="navbar-example2" class="navbar navbar-light bg-light">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="breakfast">BREAKFAST</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#lunch">LUNCH</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#swallows">SWALLOWS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#sideorder">SIDE ORDER</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#protein">PROTEIN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#drink">DRINK</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="sider">
-      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-        <h4 id="fat">Breakfast</h4>
-        <p>...</p>
-        <h4 id="mdo">Lunch</h4>
-        <p>...</p>
-        <h4 id="one">Swallows</h4>
-        <p>...</p>
-        <h4 id="two">Order Side</h4>
-        <p>...</p>
-        <h4 id="three">Protein</h4>
-        <p>...</p>
-        <h4 id="three">Drinks</h4>
-        <p>...</p>
+    <section>
+      <mdb-navbar color="grey" class="lighten-4">
+        <mdb-navbar-nav
+          nav
+          left
+          class="nav-pills"
+          v-mdb-scroll-spy="{
+            container: 'navbar-container',
+            visible: 0.4,
+            callback: 'setActiveNavlink',
+          }"
+        >
+          <mdb-nav-item href="#nav-example-1" :active="nav === 0"
+            >BREAK FAST</mdb-nav-item
+          >
+          <mdb-nav-item href="#nav-example-2" :active="nav === 1"
+            >LUNCH</mdb-nav-item
+          >
+          <mdb-nav-item href="#nav-example-2" :active="nav === 2"
+            >SWALLOWS</mdb-nav-item
+          >
+          <mdb-nav-item href="#nav-example-2" :active="nav === 3"
+            >SIDE ORDER</mdb-nav-item
+          >
+          <mdb-nav-item href="#nav-example-2" :active="nav === 4"
+            >PROTEIN</mdb-nav-item
+          >
+          <mdb-nav-item href="#nav-example-2" :active="nav === 5"
+            >DRINKS</mdb-nav-item
+          >
+        </mdb-navbar-nav>
+      </mdb-navbar>
+
+      <div
+        style="overflow-y: scroll; max-height: 900px;"
+        class="p-4"
+        id="navbar-container"
+      >
+        <h4 id="nav-example-1">BREAK FAST</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
+          enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
+          rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+          mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean
+          shorts, williamsburg hoodie minim qui you probably haven't heard of
+          them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+          Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan
+          ullamco consequat.
+        </p>
+        <h4 id="nav-example-2">LUNCH</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
+          enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
+          rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+          mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean
+          shorts, williamsburg hoodie minim qui you probably haven't heard of
+          them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+          Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan
+          ullamco consequat.
+        </p>
+        <h4 id="nav-example-2">SWALLOWS</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
+          enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
+          rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+          mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean
+          shorts, williamsburg hoodie minim qui you probably haven't heard of
+          them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+          Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan
+          ullamco consequat.
+        </p>
+        <h4 id="nav-example-2">SIDE ORDER</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
+          enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
+          rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+          mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean
+          shorts, williamsburg hoodie minim qui you probably haven't heard of
+          them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+          Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan
+          ullamco consequat.
+        </p>
+        <h4 id="nav-example-2">PROTEIN</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
+          enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
+          rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+          mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean
+          shorts, williamsburg hoodie minim qui you probably haven't heard of
+          them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+          Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan
+          ullamco consequat.
+        </p>
+        <h4 id="nav-example-2">DRINKS</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
+          enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
+          rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+          mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean
+          shorts, williamsburg hoodie minim qui you probably haven't heard of
+          them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+          Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan
+          ullamco consequat.
+        </p>
       </div>
-    </div>
+    </section>
   </div>
 </template>
-<script></script>
+<script>
+import {
+  mdbNavbar,
+  mdbNavbarNav,
+  mdbNavItem,
+  // mdbDropdown,
+  // mdbDropdownToggle,
+  // mdbDropdownMenu,
+  // mdbDropdownItem,
+  mdbScrollSpy,
+} from "mdbvue";
+
+export default {
+  name: "ScrollSpyPage",
+  components: {
+    mdbNavbar,
+    mdbNavbarNav,
+    mdbNavItem,
+    //mdbDropdown,
+    // mdbDropdownToggle,
+    // mdbDropdownMenu,
+    // mdbDropdownItem,
+  },
+  data() {
+    return {
+      nav: 0,
+    };
+  },
+  methods: {
+    setActiveNavlink(i) {
+      this.nav = i;
+    },
+  },
+  directives: { mdbScrollSpy },
+};
+</script>
 
 <style>
 .picture {
@@ -67,10 +169,10 @@ body {
   text-decoration: none;
   color: #ccc;
 }
-a :hover {
+#nav a:hover {
   color: red;
 }
-.sider {
-  margin-left: 30px;
+section {
+  border-top: 5px solid lightgrey;
 }
 </style>
